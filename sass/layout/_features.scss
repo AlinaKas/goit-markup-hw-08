@@ -1,0 +1,32 @@
+.feature__list {
+  @extend %grid;
+}
+
+.feature__item {
+  @extend %grid-item;
+  --grid-item: 4;
+}
+
+.feature__thumb {
+  @include align-flex();
+  // display: flex;
+  // align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--add-bcg-color);
+}
+
+.feature__icon {
+  width: 70px;
+  height: 70px;
+}
+
+.feature__subtitle {
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--title-color);
+}
