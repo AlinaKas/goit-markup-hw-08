@@ -1,35 +1,39 @@
 .services {
   padding-top: 0;
+
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
 }
 
-.services__list {
-  @extend %grid;
-}
+// .services__list {
+//   @extend %grid;
+// }
 
-.services__item {
-  position: relative;
+// .services__item {
+//   position: relative;
 
-  @extend %grid-item;
-  --grid-item: 3;
-}
+//   @extend %grid-item;
+//   --grid-item: 3;
+// }
 
-.services__overlay {
-  position: absolute;
-  left: 0;
-  bottom: 0;
+// .services__overlay {
+//   position: absolute;
+//   left: 0;
+//   bottom: 0;
 
-  width: 100%;
-  min-height: 70px;
-  @include padding(27px, 27px);
+//   width: 100%;
+//   min-height: 70px;
+//   @include padding-tp-btm(27px, 27px);
 
-  background-color: rgba(47, 48, 58, 0.8);
-}
+//   background-color: rgba(47, 48, 58, 0.8);
+// }
 
-.services__subtitle {
-  font-weight: 700;
-  line-height: 1.143;
-  text-align: center;
-  text-transform: uppercase;
+// .services__subtitle {
+//   font-weight: 700;
+//   line-height: 1.143;
+//   text-align: center;
+//   text-transform: uppercase;
 
-  color: var(--primary-bcg-color);
-}
+//   color: var(--primary-bcg-color);
+// }

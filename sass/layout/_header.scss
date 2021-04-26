@@ -8,40 +8,61 @@
 
 .header__container {
   @include align-flex();
-  // display: flex;
-  // align-items: center;
 }
 
 .header__logo {
-  margin-right: 93px;
-  @include padding(20px, 20px);
+  @include padding-tp-btm(16px, 16px);
 }
 
-.nav {
-  @include align-flex();
-  // display: flex;
-  // align-items: center;
-}
-
-.nav__list {
-  @include align-flex(inline-flex);
-  // display: inline-flex;
-  // align-items: center;
-}
-
-.nav__link {
-  display: inline-block;
-  @include padding(32px, 32px);
-
-  color: var(--title-color);
-  transition: color var(--duration-animation) var(--timing-function);
-
-  &:hover,
-  &:focus {
-    color: var(--accent-color);
+@media screen and (max-width: 767px) {
+  .nav__list,
+  .contacts {
+    display: none;
   }
 
-  &--current {
+  .header__container {
+    justify-content: space-between;
+    height: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header__container {
+    @include align-flex();
+    height: 80px;
+  }
+
+  .header__logo {
+    @include padding-tp-btm(21px, 21px);
+    margin-right: 88px;
+  }
+
+  .nav {
+    @include align-flex();
+  }
+
+  .nav__list {
+    @include align-flex(inline-flex);
+  }
+
+  .nav__item {
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+
+  .nav__link {
+    @include padding-tp-btm(32px, 32px);
+    color: var(--title-color);
+    transition: color var(--duration-animation) var(--timing-function);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+
+  .nav__link--current {
     position: relative;
     color: var(--accent-color);
 
@@ -59,36 +80,48 @@
       border-radius: 2px;
     }
   }
-}
+  .contacts {
+    margin-left: auto;
 
-.nav__item,
-.contacts__item {
-  &:not(:last-child) {
-    margin-right: 50px;
+    &__icon {
+      margin-right: 10px;
+      fill: currentColor;
+    }
   }
 }
 
-.contacts {
-  @include align-flex(inline-flex);
-  // display: inline-flex;
-  // align-items: center;
-  margin-left: auto;
-
-  &__icon {
-    margin-right: 10px;
-    fill: currentColor;
+@media screen and (max-width: 1199px) {
+  .contacts__item {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
   }
 }
 
-.contacts__link {
-  @include align-flex();
-  // display: flex;
-  // align-items: center;
-  @include padding(32px, 32px);
-  transition: color var(--duration-animation) var(--timing-function);
+@media screen and (min-width: 1200px) {
+  .header__logo {
+    @include padding-tp-btm(24px, 24px);
+    margin-right: 93px;
+  }
 
-  &:hover,
-  &:focus {
-    color: var(--accent-color);
+  .contacts {
+    @include align-flex(inline-flex);
+  }
+
+  .contacts__item {
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+
+  .contacts__link {
+    @include align-flex();
+    @include padding-tp-btm(32px, 32px);
+    transition: color var(--duration-animation) var(--timing-function);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
   }
 }

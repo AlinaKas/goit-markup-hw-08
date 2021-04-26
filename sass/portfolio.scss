@@ -13,9 +13,11 @@
 @import './components/section';
 @import './components/social-list-link';
 @import './components/btn';
+@import './components/grid';
 
 /* Layout */
 @import './layout/header';
+@import './layout/mobile-menu';
 @import './layout/project-filter';
 @import './layout/project-card-set';
 @import './layout/footer';

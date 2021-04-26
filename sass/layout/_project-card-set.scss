@@ -1,10 +1,8 @@
 .card-set {
   flex-wrap: wrap;
-  @extend %grid;
 }
 
 .card-set__item {
-  @extend %grid-item;
   --grid-item: 3;
 }
 
@@ -14,7 +12,8 @@
 
   &:hover,
   &:focus {
-    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12), 0 4px 4px 0 rgba(0, 0, 0, 0.06), 1px 4px 6px 0 rgba(0, 0, 0, 0.16);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12), 0 4px 4px 0 rgba(0, 0, 0, 0.06),
+      1px 4px 6px 0 rgba(0, 0, 0, 0.16);
   }
 }
 

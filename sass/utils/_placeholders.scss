@@ -10,7 +10,9 @@
 }
 
 %grid-item {
-  flex-basis: calc((100% - var(--grid-item) * var(--grid-gap)) / var(--grid-item));
+  flex-basis: calc(
+    (100% - var(--grid-item) * var(--grid-gap)) / var(--grid-item)
+  );
   margin-left: var(--grid-gap);
   margin-top: var(--grid-gap);
 }
