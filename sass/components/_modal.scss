@@ -5,16 +5,22 @@
   transform: translate(-50%, -50%) scale(1);
   z-index: 199;
 
-  width: 528px;
-  min-height: 581px;
+  width: 100%;
+  max-width: 450px;
+  height: 95%;
+  max-height: 609px;
   padding: 40px;
 
   background-color: var(--primary-bcg-color);
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.16),
-    0 2px 1px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.16), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-
+  overflow: scroll;
   transition: transform var(--duration-animation) var(--timing-function);
+
+  @media screen and (min-width: 1200px) {
+    max-width: 528px;
+    max-height: 581px;
+  }
 }
 
 .backdrop.is-hidden .modal {

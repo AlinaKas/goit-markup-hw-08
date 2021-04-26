@@ -17,6 +17,11 @@
   line-height: 1.67;
   letter-spacing: 0.01em;
   color: inherit;
+  transition: color var(--duration-animation) var(--timing-function);
+
+  &:focus-within {
+    color: var(--accent-color);
+  }
 }
 
 .contact-form__input-wrapper {
@@ -79,8 +84,6 @@
 
 .contact-form__label-policy {
   @include align-flex();
-  // display: flex;
-  // align-items: center;
   justify-content: center;
   margin-bottom: 30px;
 
