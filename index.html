@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.2.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
-
 <body>
     <!-- Header -->
     <header class="header">
@@ -457,54 +456,56 @@
         <!-- Footer -->
     <footer class="footer">
         <div class="container footer__container">
-            <div class="footer__block">
-                <a class="logo link" href="./" lang="en">Web<span class="logo__accent logo__accent--light">Studio</span></a>
-                <div class="address">
-                    <address class="address__data">г. Киев, пр-т Леси Украинки, 26</address>
-                    <ul class="address__list list">
-                        <li class="address__item"><a class="address__link link"
-                                href="mailto:info@devstudio.com">info@devstudio.com</a>
+          <div class="footer__wrapper">
+                <div class="footer__block address__wrapper">
+                    <a class="logo link" href="./" lang="en">Web<span class="logo__accent logo__accent--light">Studio</span></a>
+                    <div class="address">
+                        <address class="address__data">г. Киев, пр-т Леси Украинки, 26</address>
+                        <ul class="address__list list">
+                            <li class="address__item"><a class="address__link link"
+                                    href="mailto:info@devstudio.com">info@devstudio.com</a>
+                            </li>
+                            <li class="address__item"><a class="address__link link" href="tel:+380961111111">+38 096 111 11
+                                    11</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__block social-list__wrapper">
+                    <p class="footer__subtitle">Присоединяйтесь</p>
+                    <ul class="social-list footer__social-list list">
+                        <li class="social-list__item">
+                            <a href="" class="social-list__link link social-list__link--color">
+                                <svg class="social-list__icon social-list__icon--color">
+                                    <use href="./images/sprite.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
                         </li>
-                        <li class="address__item"><a class="address__link link" href="tel:+380961111111">+38 096 111 11
-                                11</a>
+                        <li class="social-list__item">
+                            <a href="" class="social-list__link link social-list__link--color">
+                                <svg class="social-list__icon social-list__icon--color">
+                                    <use href="./images/sprite.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-list__item">
+                            <a href="" class="social-list__link link social-list__link--color">
+                                <svg class="social-list__icon social-list__icon--color">
+                                    <use href="./images/sprite.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-list__item">
+                            <a href="" class="social-list__link link social-list__link--color">
+                                <svg class="social-list__icon social-list__icon--color">
+                                    <use href="./images/sprite.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
                         </li>
                     </ul>
                 </div>
-            </div>
-            <div class="footer__block">
-                <p class="footer__subtitle">Присоединяйтесь</p>
-                <ul class="social-list footer__social-list list">
-                    <li class="social-list__item">
-                        <a href="" class="social-list__link link social-list__link--color">
-                            <svg class="social-list__icon social-list__icon--color">
-                                <use href="./images/sprite.svg#icon-instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social-list__item">
-                        <a href="" class="social-list__link link social-list__link--color">
-                            <svg class="social-list__icon social-list__icon--color">
-                                <use href="./images/sprite.svg#icon-twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social-list__item">
-                        <a href="" class="social-list__link link social-list__link--color">
-                            <svg class="social-list__icon social-list__icon--color">
-                                <use href="./images/sprite.svg#icon-facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social-list__item">
-                        <a href="" class="social-list__link link social-list__link--color">
-                            <svg class="social-list__icon social-list__icon--color">
-                                <use href="./images/sprite.svg#icon-linkedin"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="footer__block">
+          </div>
+            <div class="footer__block form-email__wrapper">
                 <p class="footer__subtitle">Подпишитесь на рассылку</p>
                 <form class="form-email">
                     <input name="user-mail" type="email" placeholder="E-mail" class="form-email__input" autocomplete="off">
