@@ -1,9 +1,14 @@
 .card-set {
-  flex-wrap: wrap;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .card-set__item {
-  --grid-item: 3;
+  @media screen and (min-width: 1200px) {
+    --grid-item: 3;
+  }
 }
 
 .project-card {
@@ -12,8 +17,7 @@
 
   &:hover,
   &:focus {
-    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12), 0 4px 4px 0 rgba(0, 0, 0, 0.06),
-      1px 4px 6px 0 rgba(0, 0, 0, 0.16);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12), 0 4px 4px 0 rgba(0, 0, 0, 0.06), 1px 4px 6px 0 rgba(0, 0, 0, 0.16);
   }
 }
 
@@ -53,6 +57,11 @@
   padding: 20px 23px;
   border: 1px solid #eeeeee;
   border-top: 0;
+
+  // @media screen and (min-width: 767px), (max-width: 1199px) {
+  //   &:first-child {
+  //     min-height: 146px;
+  //   }
 }
 
 .project-card__title {

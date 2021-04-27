@@ -40,8 +40,8 @@
 }
 
 .client__item {
-  -ms-flex-preferred-size: calc( (100% - var(--grid-item) * var(--grid-gap)) / var(--grid-item));
-      flex-basis: calc( (100% - var(--grid-item) * var(--grid-gap)) / var(--grid-item));
+  -ms-flex-preferred-size: calc((100% - var(--grid-item) * var(--grid-gap)) / var(--grid-item));
+      flex-basis: calc((100% - var(--grid-item) * var(--grid-gap)) / var(--grid-item));
   margin-left: var(--grid-gap);
   margin-top: var(--grid-gap);
 }
@@ -508,6 +508,25 @@ img {
   color: var(--accent-color);
 }
 
+@media screen and (min-width: 767px) {
+  .grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: calc(-1 * var(--grid-gap));
+    margin-top: calc(-1 * var(--grid-gap));
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .grid__item {
+    -ms-flex-preferred-size: calc((100% - var(--grid-item) * var(--grid-gap)) / var(--grid-item));
+        flex-basis: calc((100% - var(--grid-item) * var(--grid-gap)) / var(--grid-item));
+    margin-left: var(--grid-gap);
+    margin-top: var(--grid-gap);
+  }
+}
+
 /*-- Mobile-menu --*/
 @media screen and (max-width: 767px) {
   .burger-btn,
@@ -907,12 +926,28 @@ img {
   background: var(--add-bcg-color);
 }
 
+@media screen and (min-width: 797px) {
+  .team__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 .team__item {
   text-align: center;
   background-color: var(--primary-bcg-color);
   border-radius: 0px 0px 4px 4px;
   -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (min-width: 1200px) {
+  .team__item {
+    --grid-item: 4;
+  }
 }
 
 .team__content {
@@ -935,7 +970,7 @@ img {
 
 @media screen and (max-width: 767px) {
   .team__item {
-    width: 100%;
+    max-width: 100%;
   }
   .team__item:not(:last-child) {
     margin-bottom: 30px;
@@ -1107,16 +1142,11 @@ img {
   .social-list__wrapper {
     margin-bottom: 60px;
   }
-  .form-email__wrapper {
-    margin: 0 auto;
-  }
   .form-email {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
   }
   .form-email__input {
     margin-bottom: 20px;
