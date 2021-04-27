@@ -14,7 +14,7 @@
   @include padding-tp-btm(16px, 16px);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .nav__list,
   .contacts {
     display: none;
@@ -90,7 +90,7 @@
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1199.98px) {
   .contacts__item {
     &:not(:last-child) {
       margin-bottom: 10px;

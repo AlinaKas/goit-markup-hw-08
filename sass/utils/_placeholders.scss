@@ -2,15 +2,3 @@
   margin-right: auto;
   margin-left: auto;
 }
-
-%grid {
-  display: flex;
-  margin-left: calc(-1 * var(--grid-gap));
-  margin-top: calc(-1 * var(--grid-gap));
-}
-
-%grid-item {
-  flex-basis: calc((100% - var(--grid-item) * var(--grid-gap)) / var(--grid-item));
-  margin-left: var(--grid-gap);
-  margin-top: var(--grid-gap);
-}
