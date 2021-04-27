@@ -596,10 +596,6 @@ img {
 
 .card-set__item {
   outline: 1px solid #eeeeee;
-  -webkit-transition: -webkit-box-shadow var(--duration-animation) var(--timing-function);
-  transition: -webkit-box-shadow var(--duration-animation) var(--timing-function);
-  transition: box-shadow var(--duration-animation) var(--timing-function);
-  transition: box-shadow var(--duration-animation) var(--timing-function), -webkit-box-shadow var(--duration-animation) var(--timing-function);
 }
 
 @media screen and (max-width: 767px) {
@@ -614,8 +610,15 @@ img {
   }
 }
 
-.project-card:hover ~ .card-set__item,
-.project-card:focus ~ .card-set__item {
+.project-card {
+  display: block;
+  -webkit-transition: -webkit-box-shadow var(--duration-animation) var(--timing-function);
+  transition: -webkit-box-shadow var(--duration-animation) var(--timing-function);
+  transition: box-shadow var(--duration-animation) var(--timing-function);
+  transition: box-shadow var(--duration-animation) var(--timing-function), -webkit-box-shadow var(--duration-animation) var(--timing-function);
+}
+
+.project-card:hover, .project-card:focus {
   -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12), 0 4px 4px 0 rgba(0, 0, 0, 0.06), 1px 4px 6px 0 rgba(0, 0, 0, 0.16);
           box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12), 0 4px 4px 0 rgba(0, 0, 0, 0.06), 1px 4px 6px 0 rgba(0, 0, 0, 0.16);
 }

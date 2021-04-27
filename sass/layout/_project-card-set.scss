@@ -7,7 +7,6 @@
 
 .card-set__item {
   outline: 1px solid #eeeeee;
-  transition: box-shadow var(--duration-animation) var(--timing-function);
 
   @media screen and (max-width: 767px) {
     margin-bottom: 30px;
@@ -19,11 +18,11 @@
 }
 
 .project-card {
-  // display: block;
-  // transition: box-shadow var(--duration-animation) var(--timing-function);
+  display: block;
+  transition: box-shadow var(--duration-animation) var(--timing-function);
 
-  &:hover ~ .card-set__item,
-  &:focus ~ .card-set__item {
+  &:hover,
+  &:focus {
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12), 0 4px 4px 0 rgba(0, 0, 0, 0.06), 1px 4px 6px 0 rgba(0, 0, 0, 0.16);
   }
 }
