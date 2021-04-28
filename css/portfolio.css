@@ -463,6 +463,13 @@ img {
     margin-right: 10px;
     fill: currentColor;
   }
+  .contacts__link {
+    -webkit-transition: color var(--duration-animation) var(--timing-function);
+    transition: color var(--duration-animation) var(--timing-function);
+  }
+  .contacts__link:hover, .contacts__link:focus {
+    color: var(--accent-color);
+  }
 }
 
 @media screen and (max-width: 1199.98px) {
@@ -497,11 +504,6 @@ img {
             align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
-    -webkit-transition: color var(--duration-animation) var(--timing-function);
-    transition: color var(--duration-animation) var(--timing-function);
-  }
-  .contacts__link:hover, .contacts__link:focus {
-    color: var(--accent-color);
   }
 }
 

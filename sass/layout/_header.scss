@@ -88,6 +88,14 @@
       fill: currentColor;
     }
   }
+  .contacts__link {
+    transition: color var(--duration-animation) var(--timing-function);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
 }
 
 @media screen and (max-width: 1199.98px) {
@@ -117,11 +125,5 @@
   .contacts__link {
     @include align-flex();
     @include padding-tp-btm(32px, 32px);
-    transition: color var(--duration-animation) var(--timing-function);
-
-    &:hover,
-    &:focus {
-      color: var(--accent-color);
-    }
   }
 }

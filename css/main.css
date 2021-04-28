@@ -725,6 +725,13 @@ img {
     margin-right: 10px;
     fill: currentColor;
   }
+  .contacts__link {
+    -webkit-transition: color var(--duration-animation) var(--timing-function);
+    transition: color var(--duration-animation) var(--timing-function);
+  }
+  .contacts__link:hover, .contacts__link:focus {
+    color: var(--accent-color);
+  }
 }
 
 @media screen and (max-width: 1199.98px) {
@@ -759,16 +766,10 @@ img {
             align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
-    -webkit-transition: color var(--duration-animation) var(--timing-function);
-    transition: color var(--duration-animation) var(--timing-function);
-  }
-  .contacts__link:hover, .contacts__link:focus {
-    color: var(--accent-color);
   }
 }
 
 .hero {
-  width: 480px;
   height: 400px;
   padding-top: 118px;
   padding-bottom: 118px;
@@ -805,6 +806,7 @@ img {
 @media screen and (min-width: 1200px) {
   .hero {
     max-width: 1600px;
+    height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/img-hero/hero-bg-desktop.jpg");
