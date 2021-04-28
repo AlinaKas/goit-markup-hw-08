@@ -580,9 +580,6 @@ img {
 }
 
 .card-set__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   outline: 1px solid #eeeeee;
 }
 
