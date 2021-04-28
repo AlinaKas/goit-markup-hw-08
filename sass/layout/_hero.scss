@@ -1,4 +1,5 @@
 .hero {
+  max-width: 480px;
   // height: 400px;
   @include padding-tp-btm(118px, 118px);
   @extend %centered;
@@ -21,6 +22,7 @@
 
 @media screen and (min-width: 768px) {
   .hero {
+    max-width: 768px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url('../images/img-hero/hero-bg-tablet.jpg');
 
