@@ -9,17 +9,21 @@
   display: flex;
   outline: 1px solid #eeeeee;
 
-  @media screen and (max-width: 767px) {
-    margin-bottom: 30px;
-  }
+  // @media screen and (max-width: 767.98px) {
+  //   &:not(:last-child) {
+  //     margin-bottom: 30px;
+  //   }
+  // }
 
+   @media screen and (min-width: 768px) {
+    --grid-item: 2;
+  }
   @media screen and (min-width: 1200px) {
     --grid-item: 3;
   }
 }
 
 .project-card {
-  // display: block;
   transition: box-shadow var(--duration-animation) var(--timing-function);
 
   &:hover,
@@ -65,7 +69,7 @@
   // border: 1px solid #eeeeee;
   // border-top: 0;
 
-  // @media screen and (min-width: 768px) and (max-width: 1199px) {
+  // @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   //   padding: 20px 18px;
   // }
 }

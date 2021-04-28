@@ -10,7 +10,7 @@
   --text-font: 'Roboto', sans-serif;
   --accent-font: 'Raleway', sans-serif;
   --grid-gap: 30px;
-  --grid-item: 2;
+  --grid-item: 1;
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   --duration-animation: 250ms;
 }
@@ -239,9 +239,6 @@ img {
 }
 
 .grid {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin-left: calc(-1 * var(--grid-gap));
   margin-top: calc(-1 * var(--grid-gap));
 }
@@ -589,9 +586,9 @@ img {
   outline: 1px solid #eeeeee;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 768px) {
   .card-set__item {
-    margin-bottom: 30px;
+    --grid-item: 2;
   }
 }
 

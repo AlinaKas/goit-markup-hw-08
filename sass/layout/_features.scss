@@ -1,7 +1,4 @@
 .feature__list {
-  @media screen and (max-width: 767.98px) {
-    display: block;
-  }
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
@@ -9,10 +6,14 @@
 }
 
 .feature__item {
-  @media screen and (max-width: 767.98px) {
-    &:not(:last-child) {
-      margin-bottom: 30px;
-    }
+  // @media screen and (max-width: 767.98px) {
+  //   &:not(:last-child) {
+  //     margin-bottom: 30px;
+  //   }
+  // }
+
+  @media screen and (min-width: 768px) {
+    --grid-item: 2;
   }
 
   @media screen and (min-width: 1200px) {
