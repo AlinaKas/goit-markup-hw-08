@@ -83,9 +83,18 @@
 }
 
 .contact-form__label-policy {
-  @include align-flex();
-  justify-content: center;
   margin-bottom: 30px;
+
+  @media screen and (max-width: 1199.98px) {
+    display: flex;
+    font-size: 12px;
+    line-height: 1.67;
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include align-flex();
+    justify-content: center;
+  }
 
   &::before {
     display: inline-block;

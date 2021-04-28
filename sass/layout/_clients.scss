@@ -1,11 +1,13 @@
 .client__list {
+  display: flex;
   flex-wrap: wrap;
-  @extend %grid;
+  // @media screen and (min-width: 768px) {
+  //   display: flex;
+  //   flex-wrap: wrap;
+  // }
 }
 
 .client__item {
-  @extend %grid-item;
-
   @media screen and (min-width: 1200px) {
     --grid-item: 6;
   }
