@@ -1,5 +1,5 @@
 .hero {
-  height: 400px;
+  // height: 400px;
   @include padding-tp-btm(118px, 118px);
   @extend %centered;
   text-align: center;
@@ -34,7 +34,7 @@
 @media screen and (min-width: 1200px) {
   .hero {
     max-width: 1600px;
-    height: 600px;
+    // height: 600px;
     @include padding-tp-btm(200px, 200px);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url('../images/img-hero/hero-bg-desktop.jpg');
