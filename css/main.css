@@ -598,13 +598,18 @@ img {
     display: -ms-flexbox;
     display: flex;
   }
-  .mobile-menu__social-item:not(:last-child) {
-    margin-right: 10px;
+  .mobile-menu__social-item {
+    position: relative;
+    margin-right: 20px;
   }
-  .mobile-menu__social-item:not(:last-child) ::after {
-    content: ' ';
-    margin-left: 10px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
+  .mobile-menu__social-item:not(:first-child)::before {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background-color: rgba(33, 33, 33, 0.2);
   }
   .mobile-menu__social-link {
     font-size: 18px;
