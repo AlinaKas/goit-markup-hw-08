@@ -1,9 +1,7 @@
 .hero {
-  // max-width: 1600px;
-
-  width: 100%;
+  width: 480px;
+  height: 400px;
   @include padding-tp-btm(118px, 118px);
-  // @include padding-tp-btm(200px, 200px);
   @extend %centered;
   text-align: center;
 
@@ -15,8 +13,8 @@
     url('../images/img-hero/hero-bg-mobile.jpg');
 
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 320px),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+    screen and (min-resolution: 192dpi) and (min-width: 320px),
+    screen and (min-resolution: 2dppx) and (min-width: 320px) {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url('../images/img-hero/hero-bg-mobile@2x.jpg');
   }

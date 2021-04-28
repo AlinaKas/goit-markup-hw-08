@@ -768,7 +768,8 @@ img {
 }
 
 .hero {
-  width: 100%;
+  width: 480px;
+  height: 400px;
   padding-top: 118px;
   padding-bottom: 118px;
   text-align: center;
@@ -780,7 +781,7 @@ img {
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/img-hero/hero-bg-mobile.jpg");
 }
 
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 320px), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 320px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 320px), screen and (min-resolution: 192dpi) and (min-width: 320px), screen and (min-resolution: 2dppx) and (min-width: 320px) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/img-hero/hero-bg-mobile@2x.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/img-hero/hero-bg-mobile@2x.jpg");
