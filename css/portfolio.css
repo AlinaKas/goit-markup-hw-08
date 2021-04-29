@@ -599,6 +599,7 @@ img {
 }
 
 .project-card {
+  display: block;
   -webkit-transition: -webkit-box-shadow var(--duration-animation) var(--timing-function);
   transition: -webkit-box-shadow var(--duration-animation) var(--timing-function);
   transition: box-shadow var(--duration-animation) var(--timing-function);

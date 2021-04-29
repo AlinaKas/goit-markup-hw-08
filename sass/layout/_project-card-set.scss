@@ -23,6 +23,7 @@
 }
 
 .project-card {
+  display: block;
   transition: box-shadow var(--duration-animation) var(--timing-function);
 
   &:hover,
