@@ -1010,6 +1010,10 @@ img {
       flex-wrap: wrap;
 }
 
+.client__item {
+  --grid-item: 2;
+}
+
 @media screen and (min-width: 768px) {
   .client__item {
     --grid-item: 3;
@@ -1160,9 +1164,8 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
